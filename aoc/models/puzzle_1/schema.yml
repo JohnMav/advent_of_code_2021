@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: part_a
+    description: "Advent of Code Puzzle 1"
+    columns:
+      - name: row_number
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: depth
+        description: "The depth at this measurement"
+      - name: increased
+        description: "If this depth measurement was an increase compared to the last depth measurement"
