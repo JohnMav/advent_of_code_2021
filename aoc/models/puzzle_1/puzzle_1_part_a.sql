@@ -6,4 +6,4 @@ SELECT
         THEN TRUE
         ELSE FALSE
     END AS increased
-FROM public_seed_data.puzzle_1
+FROM {{ ref('puzzle_1') }}

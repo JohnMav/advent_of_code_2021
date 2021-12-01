@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: part_a
-    description: "Advent of Code Puzzle 1"
+  - name: puzzle_1_part_a
+    description: "Advent of Code Puzzle 1 Part A"
     columns:
       - name: row_number
         description: "The primary key for this table"
@@ -13,3 +13,17 @@ models:
         description: "The depth at this measurement"
       - name: increased
         description: "If this depth measurement was an increase compared to the last depth measurement"
+
+  - name: puzzle_1_part_b
+    description: "Advent of Code Puzzle 1 Part B"
+    columns:
+      - name: group_number
+        description: "The primary key for this table, identifies the sum grouping"
+        tests:
+          - unique
+          - not_null
+      - name: depth_sum
+        description: "The sum of the depth group at this measurement"
+      - name: increased
+        description: "If this depth measurement was an increase compared to the last depth measurement"
+    
