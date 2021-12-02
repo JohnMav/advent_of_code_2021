@@ -2,13 +2,34 @@ version: 2
 
 models:
   - name: puzzle_2_part_a
-    description: "Advent of Code Puzzle 1 Part A"
+    description: "Advent of Code Puzzle 2 Part A"
     columns:
-      - name: row_number
+      - name: step
         description: "The primary key for this table"
         tests:
           - unique
           - not_null
-      - name: position
-        description: "The current position at this point in time"
+      - name: direction
+      - name: distance
+      - name: horizontal_position
+        description: "The current horizontal position at this point in time"
+      - name: depth_position
+        description: "The Current depth position at this point in time"
+
+  - name: puzzle_2_part_b
+    description: "Advent of Code Puzzle 2 Part B"
+    columns:
+      - name: step
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: direction
+      - name: distance
+      - name: horizontal_position
+        description: "The current horizontal position at this point in time"
+      - name: aim_position
+        description: "The vertical aim direction of your craft"
+      - name: depth_position
+        description: "The Current depth position at this point in time"
     
