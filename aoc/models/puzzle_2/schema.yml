@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: puzzle_2_part_a
+    description: "Advent of Code Puzzle 1 Part A"
+    columns:
+      - name: row_number
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: position
+        description: "The current position at this point in time"
+    
