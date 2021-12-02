@@ -33,7 +33,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   aoc_puzzles:
-    puzzle_1_part_a:
+    puzzle_1:
+      +materialized: view
+    puzzle_2:
       +materialized: view
 
 seeds:

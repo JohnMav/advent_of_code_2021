@@ -1,7 +1,7 @@
 SELECT
     COUNT(
         CASE WHEN increased
-             THEN row_number
+             THEN step
              ELSE NULL
         END
     ) AS depth_increase_count
