@@ -43,3 +43,7 @@ seeds:
     puzzle_1:
       +column_types:
         depth: int
+    puzzle_2:
+      +column_types:
+        direction: text
+        distance: int
