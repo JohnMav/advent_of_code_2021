@@ -105,6 +105,8 @@ class Submarine:
     def compute_life_support_rating(self, readings: list) -> int:
         self.o2_generator_rating = self.compute_o2_rating(readings)
         self.co2_scrubber_rating = self.compute_co2_rating(readings)
+        print(self.o2_generator_rating)
+        print(self.co2_scrubber_rating)
         return self.__convert_binary_to_int(self.o2_generator_rating) * self.__convert_binary_to_int(self.co2_scrubber_rating)
 
 
