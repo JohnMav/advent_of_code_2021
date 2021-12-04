@@ -49,3 +49,6 @@ seeds:
       +column_types:
         direction: text
         distance: int
+    puzzle_3:
+      +column_types:
+        reading: text
